@@ -50,18 +50,16 @@ O site é composto por páginas interligadas através de um menu lateral fixo, p
 Abaixo estão algumas imagens ilustrativas do site **Eventos em Araraquara**, mostrando diferentes tipos de eventos disponíveis na plataforma:
 
 ### 🎨 Feira de Artesanato
-<img src="imagens/README/eventos_feira.png" width="650">
+<img src="eventos/imagens/evento_feira.jpg" width="650">
 
 ### 🎤 Show ao Vivo
-<img src="imagens/README/eventos_feira.png" width="650">
-![Show ao Vivo](imagens/eventos_show.png)
+<img src="eventos/imagens/eventos_show.jpg" width="650">
 
 ### 🍽️ Evento Gastronômico
-<img src="imagens/README/eventos_feira.png" width="650">
-![Evento Gastronômico](imagens/eventos_restaurante.png)
+<img src="eventos/imagens/eventos-restaurante.webp" width="650">
 
 ### 🎭 Teatro
-<img src="eventos/imagens/eventos_teatro.png" width="650">
+<img src="eventos/imagens/eventos_teatro.jpg" width="650">
 
 
 ---
