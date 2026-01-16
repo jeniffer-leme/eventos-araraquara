@@ -1,0 +1,150 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #004080, #003366);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #003366;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 80px); /* Ajusta a altura para a sidebar não ultrapassar a tela */
+    position: fixed;
+    top: 80px;
+    left: 0;
+    transition: width 0.3s ease; /* Transição suave para redimensionamento */
+}
+
+.sidebar:hover {
+    width: 280px; /* Expande a sidebar ao passar o mouse */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #004080;
+    color: #ffffff;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    margin-left: 270px; /* Espaço para a sidebar */
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: margin-left 0.3s ease; /* Transição suave para o ajuste da margem */
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003366;
+    border-bottom: 4px solid #003366;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulários */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+form button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #002244;
+}
